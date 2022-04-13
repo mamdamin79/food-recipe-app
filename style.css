@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border: 0.2rem solid rgba(0,0,0,0.1);
+}
+body{
+    font-weight: 300;
+    font-size:1rem;
+    line-height:1.6;
+    font-family:"poppins" ,sans-serif;
+}
+.btn-primary{
+    outline:none;
+    border: none;
+    cursor: pointer;
+    font-size:1rem;
+    font-family: inherit;
+}
+.title-primary{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+p{
+    opacity: 0.8;
+    margin: 0.5rem 0;
+    color: #333;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items:center;
+}
+
+cite{
+    font-size:1rem;
+}
+form{
+    padding:0.5rem 0;
+}
+form input{
+    width:80%;
+    padding:0.5rem 0.2rem;
+    font-size:1rem;
+    border: none;
+    outline: none;
+    border: 1px solid #d65108;
+}
+form input:focus{
+    background-color: #f7b973;
+}
+form input::placeholder{
+    color:#d65108;
+}
+form .search-btn{
+    padding:0.5rem;
+    font-size:1.2rem;
+    font-weight: 900;
+    margin-left: -0.5rem;
+    border: 1px solid #d65108;
+    color: #fff;
+    background-color: #fa5b06;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+form .search-btn:hover{
+    background-color: #d65108;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-top-right-radius:0.5rem;
+    border-top-left-radius:0.5rem;
+
+    
+}
+.item{
+    box-shadow: var(--box-shadow);
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    transition: all 0.3s ease-in-out;
+
+}
+.item:hover{
+    transform: translateY(-0.4rem);
+    -webkit-transform: translateY(-0.4rem);
+    -moz-transform: translateY(-0.4rem);
+    -ms-transform: translateY(-0.4rem);
+    -o-transform: translateY(-0.4rem);
+}
+.item-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(27rem,1fr)); 
+    gap: 1rem;
+    text-align: center;
+    padding:1.5rem;
+}
+.item button{
+    color: #fff;
+    background-color: #fa5b06;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-size:1rem;
+    font-weight:600;
+    transition: all 0.3s ease-in-out;
+}
+.item button:hover{
+    background-color: #d65108;
+}
+.detaile{
+    position: fixed;
+    width:90%;
+    background-color: #fa5b06;
+    top:50%;
+    left:50%;
+    height:90%;
+    transform:translate(-50%, -50%);
+    padding:2rem 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-align: center;
+    display:none;
+    overflow-y: scroll;
+    -webkit-transform:translate(-50%,);
+    -moz-transform:translate(-50%,);
+    -ms-transform:translate(-50%,);
+    -o-transform:translate(-50%,);
+}
+/* js related */
+.showRecipes {
+    display:block;
+}
+.detaile img {
+    width:100px;
+    height: 100px;;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    display:block;
+    margin: 0.5rem auto;
+}
+.close-btn{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0.3rem;
+    font-size:1.2rem;
+    background-color: #fff;
+    color: #fa5b06;
+    border-radius:0.2rem;
+    -webkit-border-radius:0.2rem;
+    -moz-border-radius:0.2rem;
+    -ms-border-radius:0.2rem;
+    -o-border-radius:0.2rem;
+    transition: all 0.3s ease-in-out;
+}
+.close-btn:hover{
+    background-color: #d65108;
+    color: #fff;
+}
+.detaile h2,h4{
+    color: #fff;
+    margin:0.2rem
+}
+.detaile p{
+    color: #333;
+    font-size:1.1rem;
+}
+.detaile a{
+    margin-top:0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
