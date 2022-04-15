@@ -113,10 +113,11 @@ img{
 }
 .item-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(27rem,1fr)); 
+    grid-template-columns:repeat(auto-fit,minmax(20rem,1fr)); 
     gap: 1rem;
     text-align: center;
-    padding:1.5rem;
+    padding:1rem;
+    margin:0 auto;
 }
 .item button{
     color: #fff;
