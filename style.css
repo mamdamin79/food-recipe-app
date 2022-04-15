@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+/* css reset */
 *{
     margin: 0;
     padding: 0;
@@ -79,6 +80,7 @@ form .search-btn{
 form .search-btn:hover{
     background-color: #d65108;
 }
+/* main section that contains search results */
 main{
     width: 100%;
     height: 100%;
@@ -133,6 +135,8 @@ img{
 .item button:hover{
     background-color: #d65108;
 }
+
+/* detail modal */
 .detaile{
     position: fixed;
     width:90%;
